@@ -1,0 +1,34 @@
+.hero-image {
+    background-image: url(../img/dc.png);
+    background-position: top;
+    background-size: cover;
+}
+
+.section-image {
+    background-image: url(../img/contact.jpg);
+    background-position: bottom;
+    background-size: cover;
+}
+
+.webshop-image {
+    background-image: url(../img/webshop.jpg);
+    background-position: bottom;
+    background-size: cover;
+}
+
+.studio-image {
+    background-image: url(../img/projects.jpg);
+    background-position: bottom;
+    background-size: cover;
+}
+
+.background {
+    background-color: lightgray !important;
+}
+.text{
+    margin: 2px;
+}
+
+footer{
+    background-color: rgb(162, 162, 162) !important;
+}

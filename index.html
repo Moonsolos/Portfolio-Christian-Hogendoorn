@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackathon</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+
+<body>
+    
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item">
+            <img src="img/logo.png" width="70" height="28">
+          </a>
+      
+          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+      
+        <div id="navbarBasicExample" class="navbar-menu">
+          <div class="navbar-start">
+            <a class="navbar-item" href="index.html">
+              Home
+            </a>
+      
+            <a class="navbar-item" href="company.html">
+              About me
+            </a>
+
+            <a class="navbar-item" href="artists.html">
+                Projects
+              </a>
+
+              <a class="navbar-item" href="webshop.html">
+                Contact
+              </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    
+      <div class="w3-content w3-display-container"></div>
+      
+      <div class="w3-display-container mySlides">
+      <section class="hero is-large is-info">
+        <div class="hero-body hero-image">
+          <p class="title has-text-white is-size-1">
+            About me
+          </p>
+          <div class="buttons">
+            <a class="button is-primary" href="webshop.html">
+              <p>Take me there</p>
+            </a>
+        </div>
+      </section>
+    </div>
+    </div>
+
+    <div class="w3-display-container mySlides">
+        <section class="hero is-large is-info">
+            <div class="hero-body studio-image">
+              <p class="title has-text-white is-size-1">
+                Projects
+              </p>
+              <div class="buttons">
+                <a class="button is-primary" href="artists.html">
+                  <p>Check them here</p>
+                </a>
+            </div>
+          </section>
+        </div>
+
+    <div class="w3-display-container mySlides">
+        <section class="hero is-large is-info">
+            <div class="hero-body section-image">
+            <p class="title has-text-white is-size-1">
+            Contact
+             </p>
+            <div class="buttons">
+                <a class="button is-primary" href="company.html">
+                  <p>Info</p>
+                </a>
+            </div>
+      </section>
+    </div>
+
+    <section class="background">
+        <section class="section">
+          <div class="tile is-ancestor">
+            <div class="tile is-parent">
+              <article class="tile is-child box">
+                <p class="title">Productfinder</p>
+                <figure class="image">
+                    <img src="img/hbpv.png">
+                  </figure>
+                <p>A website made to help older people find products in the supermarket.</p>
+              </article>
+            </div>
+            <div class="tile is-parent">
+              <article class="tile is-child box">
+                <p class="title">Quotation page</p>
+                <figure class="image">
+                <img src="img/offerte.png">
+                </figure>
+                <p>A system made to help companies keep track of their customers wishes.</p>
+              </article>
+            </div>
+            <div class="tile is-parent">
+                <article class="tile is-child box">
+                  <p class="title">Portfolio Website</p>
+                  <figure class="image">
+                  <img src="img/portfolio.png">
+                  </figure>
+                  <p>Portfolio website made to practice programming.</p>
+                </article>
+              </div>
+          </div>
+        </section>
+        
+        <button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+
+
+<footer class="footer">
+    <div class="content has-text-centered">
+        <div class="text">
+          <p><strong>Christian Hogendoorn</strong></p>
+          <p>CMGT, Hogeschool Rotterdam</p>
+        </div>
+    </div>
+</footer>
+        
+        <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+        
+        function plusDivs(n) {
+          showDivs(slideIndex += n);
+        }
+        
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          if (n > x.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = x.length}
+          for (i = 0; i < x.length; i++) {
+             x[i].style.display = "none";  
+          }
+          x[slideIndex-1].style.display = "block";  
+        }
+        </script>
+</body>
+</html>
